@@ -18,7 +18,27 @@
     </div>
 
     <h3 class="margin-title"><strong>Redes Sociais</strong></h3>
-    
+
+    <h3 class="margin-title"><strong>Mensagem</strong></h3>
+    <form action="cadastro" method="POST" role="form">
+        <div class="row">
+            <div class="input-field col s6">
+                <input id="nome" name="nome" pattern="[A-Za-z\s]{2,}" type="text" class="validate" required title="- Preencha apenas com letras e com mais de 2 caracteres">
+                <label class="primary-color" for="nome" data-error="Nome Inválido" data-success="Ok!">Nome</label>
+            </div>
+            <div class="input-field col s6">
+                <input id="email" name="email" type="email" class="validate" required>
+                <label class="primary-color" for="email" data-error="Email Inválido" data-success="Ok!">Email</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s12">
+                <textarea id="mensagem" name="mensagem" class="validate materialize-textarea" rows="3" required></textarea>
+                <label class="primary-color" for="mensagem" data-error="Digite uma mensagem" data-success="Ok!">Mensagem</label>
+            </div>
+        </div>
+        <button id="cadastrar" type="submit" class="btn btn-block btn-large right">Enviar</button>
+    </form>
 </div>
 
 <br><br><br><br>
