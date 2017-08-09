@@ -98,8 +98,8 @@ nav {
 }
 
 .margin-title {
-  margin-top: 50px;
-  margin-bottom: 40px;
+  padding-top: 50px;
+  padding-bottom: 40px;
 }
 
 .footer-color {
@@ -114,6 +114,35 @@ a:hover {
   text-decoration: underline;
 }
 
-@media only screen and (max-width: 480px) {
+p {
+  padding-bottom: 20px;
+}
 
+.btn, .btn-large {
+  background-color: #c84714;
+}
+
+.btn:hover {
+  background-color: #ad4014;
+}
+
+@media only screen and (max-width: 480px) {
+  .jumbotron {
+    height: 300px;
+    line-height: 0px;
+  }
+
+  .jumbotron h1 {
+    margin-bottom: 14px;
+    font-size: 36px;
+  }
+
+  .margin-title {
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+
+  nav .button-collapse {
+    margin: 20px 28px;
+  }
 }

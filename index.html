@@ -14,6 +14,11 @@
 </head>
 
 <body ng-app="app" ng-cloak="">
+  <div ng-if="false">
+    <h1>Loading the application, please hold on</h1>
+    <div class="aCssSpinner"> </div>
+  </div>
+
   <nav class="white" role="navigation">
     <div class="nav-wrapper container"><a id="logo-container" href="/" class="brand-logo"><img class="logo-img" src="img/logo.png" alt=""></a>
       <ul class="right hide-on-med-and-down">
@@ -51,6 +56,11 @@
     ga('send', 'pageview');
   </script>
 
+  <script>
+      function upScreen() {
+        $("html, body").animate({ scrollTop: 0 }, 500);
+      }
+  </script>
 
   <!-- ANGULAR JS -->
   <!-- Compiled and minified JavaScript -->
