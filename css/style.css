@@ -12,3 +12,72 @@
 .icon-block .material-icons {
 	font-size: inherit;
 }
+
+.jumbotron {
+  background-image: url('../img/banner.jpg');
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  color: inherit;
+  background-color: #eee;
+  height: 500px;
+  line-height: 50px;
+  background-size: 100% 100%;
+}
+.jumbotron h1,
+.jumbotron .h1 {
+  color: inherit;
+}
+.jumbotron p {
+  margin-bottom: 15px;
+  font-size: 21px;
+  font-weight: 200;
+}
+.jumbotron > hr {
+  border-top-color: #d5d5d5;
+}
+.container .jumbotron,
+.container-fluid .jumbotron {
+  padding-right: 15px;
+  padding-left: 15px;
+  border-radius: 6px;
+}
+.jumbotron .container {
+  max-width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .jumbotron {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+  .container .jumbotron,
+  .container-fluid .jumbotron {
+    padding-right: 60px;
+    padding-left: 60px;
+  }
+  .jumbotron h1,
+  .jumbotron .h1 {
+    font-size: 63px;
+  }
+}
+
+nav .brand-logo {
+  color: black;
+}
+
+nav ul a {
+  color: black;
+}
+
+nav a {
+  color: black;
+}
+
+nav {
+  height: 100px;
+  line-height: 100px;
+}
+
+.logo-img {
+  padding: 10px;
+}
