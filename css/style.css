@@ -21,8 +21,9 @@
   color: inherit;
   background-color: #eee;
   height: 500px;
-  line-height: 50px;
   background-size: 100% 100%;
+  line-height: 50px;
+  border-bottom:1px solid #666;
 }
 .jumbotron h1,
 .jumbotron .h1 {
@@ -61,16 +62,12 @@
   }
 }
 
-nav .brand-logo {
-  color: black;
-}
-
 nav ul a {
-  color: black;
+  color: #666;
 }
 
 nav a {
-  color: black;
+  color: #666;
 }
 
 nav {
@@ -79,5 +76,28 @@ nav {
 }
 
 .logo-img {
-  padding: 10px;
+  height: 80px;
+  margin: 10px;
+}
+
+#map {
+  height: 400px;
+  width: 100%;
+}
+
+.map-descricao {
+  width: 100%;
+}
+
+.map-title {
+  padding-top: 100px;
+}
+
+.margin-title {
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+
+@media only screen and (max-width: 480px) {
+
 }

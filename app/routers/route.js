@@ -21,7 +21,7 @@
                 templateUrl: 'app/contatos/contatos.html',
             }).state('projetos', {
                 url: '/projetos',
-                templateUrl: 'app/projetos/projeto.html',
+                templateUrl: 'app/projetos/projetos.html',
             }).state('queroajudar', {
                 url: '/quero-ajudar',
                 templateUrl: 'app/queroajudar/quero-ajudar.html',
