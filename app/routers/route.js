@@ -25,6 +25,12 @@
             }).state('queroajudar', {
                 url: '/quero-ajudar',
                 templateUrl: 'app/queroajudar/quero-ajudar.html',
+            }).state('dancandopelavida', {
+                url: '/dancando-pela-vida',
+                templateUrl: 'app/projetos/conteudo/dancando-pela-vida.html',
+            }).state('juntospelavida', {
+                url: '/juntos-pela-vida',
+                templateUrl: 'app/projetos/conteudo/juntos-pela-vida.html',
             });
 
         $urlRouterProvider.otherwise('/');
