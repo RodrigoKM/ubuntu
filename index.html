@@ -15,7 +15,32 @@
 
 <body ng-app="app">
 
-  <iu-navbar></iu-navbar>
+  <ul id="dropdown1" class="dropdown-content">
+    <li><a ui-sref="projetos">Dançando pela vida</a></li>
+    <li><a ui-sref="projetos">Juntos pela vida</a></li>
+  </ul>
+
+  <nav class="light-blue lighten-1" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="/" class="brand-logo">Instituto Ubuntu</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a ui-sref="home">Home</a></li>
+        <li><a ui-sref="sobre">O Instituto</a></li>
+        <li><a class="dropdown-button" href="javascript:void(0);" data-activates="dropdown1">Projetos<i class="material-icons right">arrow_drop_down</i></a></li>
+        <li><a ui-sref="queroajudar">Quero Ajudar</a></li>
+        <li><a ui-sref="contatos">Contatos</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav">
+        <li><a ui-sref="home">Home</a></li>
+        <li><a ui-sref="sobre">O Instituto</a></li>
+        <li><a ui-sref="projetos">Dançando pela vida</a></li>
+        <li><a ui-sref="projetos">Juntos pela vida</a></li>
+        <li><a ui-sref="queroajudar">Quero Ajudar</a></li>
+        <li><a ui-sref="contatos">Contatos</a></li>
+      </ul>
+      <a href="#!" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
 
   <div class="container">
     <ui-view autoscroll="false"></ui-view>
@@ -55,7 +80,7 @@
   <script src="app/navbar/navbar.component.js"></script>
   <script src="app/footer/footer.component.js"></script>
   <script src="app/home/home.component.js"></script>
- 
+
   <!--  Scripts-->
   <script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
     crossorigin="anonymous"></script>
