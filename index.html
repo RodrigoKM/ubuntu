@@ -9,7 +9,7 @@
 
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
 </head>
 
@@ -17,7 +17,9 @@
 
   <iu-navbar></iu-navbar>
 
-  <iu-home></iu-home>
+  <div class="container">
+    <ui-view autoscroll="false"></ui-view>
+  </div>
 
   <iu-footer></iu-footer>
 
@@ -33,15 +35,17 @@
     ga('send', 'pageview');
   </script>
 
-  <!--  Scripts-->
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="js/materialize.js"></script>
-  <script src="js/init.js"></script>
 
   <!-- ANGULAR JS -->
   <!-- Compiled and minified JavaScript -->
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.3/angular-ui-router.js"></script>
+ 
+  <!--  Scripts-->
+  <script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
+  <script src="js/init.js"></script>
 
   <!-- Module -->
   <script src="app/app.module.js"></script>
