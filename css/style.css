@@ -17,11 +17,15 @@
 	font-size: inherit;
 }
 
+.section {
+  padding-bottom: 0px;
+}
+
 .jumbotron {
   background-image: url('../img/banner.jpg');
   padding-top: 30px;
-  padding-bottom: 30px;
-  margin-bottom: 30px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
   color: inherit;
   background-color: #eee;
   height: 500px;
@@ -100,6 +104,7 @@ nav {
 .margin-title {
   padding-top: 50px;
   padding-bottom: 40px;
+  color: #c84714;
 }
 
 .footer-color {
@@ -108,10 +113,6 @@ nav {
 
 a {
   color: #666;
-}
-
-a:hover {
-  text-decoration: underline;
 }
 
 p {
@@ -148,3 +149,23 @@ p {
     margin: 20px 28px;
   }
 }
+ .uppercase {
+   text-transform: uppercase;
+ }
+
+ .botao{
+  margin-top: 70px;
+ }
+
+ .input-field input[type=text]:focus + label {
+     color: #666;
+}
+
+.input-field input[type=text]:focus {
+     border-bottom: 1px solid #c84714;
+     box-shadow: 0 1px 0 0 #c84714;
+   }
+
+   .margintop { 
+     padding-top: 0px;
+   }

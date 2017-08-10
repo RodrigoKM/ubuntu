@@ -18,7 +18,7 @@
                 templateUrl: 'app/sobre/sobre.html',
             }).state('contatos', {
                 url: '/contatos',
-                templateUrl: 'app/contatos/contatos.html',
+                templateUrl: 'app/contatos/contatos.html'
             }).state('projetos', {
                 url: '/projetos',
                 templateUrl: 'app/projetos/projetos.html',
@@ -28,9 +28,9 @@
             }).state('dancandopelavida', {
                 url: '/dancando-pela-vida',
                 templateUrl: 'app/projetos/conteudo/dancando-pela-vida.html',
-            }).state('juntospelavida', {
-                url: '/juntos-pela-vida',
-                templateUrl: 'app/projetos/conteudo/juntos-pela-vida.html',
+            }).state('amigosdavida', {
+                url: '/amigos-da-vida',
+                templateUrl: 'app/projetos/conteudo/amigos-da-vida.html',
             });
 
         $urlRouterProvider.otherwise('/');
