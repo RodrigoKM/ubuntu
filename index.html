@@ -14,17 +14,17 @@
 </head>
 
 <body ng-app="app" ng-cloak="">
-  <div ng-if="false">
-    <h1>Loading the application, please hold on</h1>
-    <div class="aCssSpinner"></div>
-  </div>
+  <ul id="dropdown1" class="dropdown-content">
+    <li><a ui-sref="dancandopelavida">Dançando pela Vida</a></li>
+    <li><a ui-sref="amigosdavida">Amigos da Vida</a></li>
+  </ul>
 
   <nav class="white" role="navigation">
     <div class="nav-wrapper container"><a id="logo-container" ui-sref="home" class="brand-logo"><img class="logo-img" src="img/logo.png" alt=""></a>
       <ul class="right hide-on-med-and-down">
         <li><a ui-sref="home">Home</a></li>
         <li><a ui-sref="sobre">O Instituto</a></li>
-        <li><a ui-sref="projetos">Projetos</a></li>
+        <li><a class="dropdown-button" data-activates="dropdown1">Projetos</a></li>
         <li><a ui-sref="queroajudar">Quero Ajudar</a></li>
         <li><a ui-sref="contatos">Contato</a></li>
       </ul>
@@ -32,7 +32,8 @@
       <ul id="nav-mobile" class="side-nav">
         <li><a ui-sref="home">Home</a></li>
         <li><a ui-sref="sobre">O Instituto</a></li>
-        <li><a ui-sref="projetos">Projetos</a></li>
+        <li><a ui-sref="dancandopelavida">Dançando pela Vida</a></li>
+        <li><a ui-sref="amigosdavida">Amigos da Vida</a></li>
         <li><a ui-sref="queroajudar">Quero Ajudar</a></li>
         <li><a ui-sref="contatos">Contato</a></li>
       </ul>
@@ -40,19 +41,19 @@
     </div>
   </nav>
 
+  <div ng-if="false">
+    <h1>Loading the application, please hold on</h1>
+    <div class="aCssSpinner"></div>
+  </div>
+
   <ui-view autoscroll="false"></ui-view>
 
   <iu-footer></iu-footer>
 
-  <!--  Scripts-->
-  <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
-  <script src="js/init.js"></script>
-
   <script>
-      function upScreen() {
-        $("html, body").animate({ scrollTop: 0 }, 500);
-      }
+    function upScreen() {
+      $("html, body").animate({ scrollTop: 0 }, 500);
+    }
   </script>
 
   <!-- ANGULAR JS -->
@@ -67,15 +68,18 @@
   <script src="app/routers/route.js"></script>
 
   <!-- Services -->
-  
 
   <!-- Controllers -->
-  
 
   <!-- Components -->
   <script src="app/footer/footer.component.js"></script>
   <script src="app/home/home.component.js"></script>
   <script src="app/projetos/projetos.component.js"></script>
+
+  <!--  Scripts-->
+  <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
+  <script src="js/init.js"></script>
 
   <script>
     (function (i, s, o, g, r, a, m) {
