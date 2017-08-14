@@ -127,11 +127,11 @@ p {
 }
 
 .btn, .btn-large {
-  background-color: #c84714;
+  background-color: #ef961d;
 }
 
 .btn:hover {
-  background-color: #ad4014;
+  background-color: #c84714;
 }
 
 @media only screen and (max-width: 480px) {
