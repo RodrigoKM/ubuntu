@@ -17,6 +17,11 @@
 	font-size: inherit;
 }
 
+.lheight{
+	    line-height: 50px;
+}
+
+
 .section {
   padding-bottom: 0px;
 }
