@@ -10,8 +10,12 @@
       alignment: 'left', // Displays dropdown with edge aligned to the left of button
       stopPropagation: false // Stops event propagation
     });
+    
     $('.button-collapse').sideNav({
       closeOnClick: true
     });
+
+    $('.materialboxed').materialbox();
+    
   }); // end of document ready
 })(jQuery); // end of jQuery name space

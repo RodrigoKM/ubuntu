@@ -31,6 +31,11 @@
             }).state('amigosdavida', {
                 url: '/amigos-da-vida',
                 templateUrl: 'app/projetos/conteudo/amigos-da-vida.html',
+            }).state('galeria', {
+                url: '/galeria',
+                templateUrl: 'app/galeria/galeria.html',
+                controller: 'GaleriaController',
+                controllerAs: 'vm'
             });
 
         $urlRouterProvider.otherwise('/');

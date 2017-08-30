@@ -1,0 +1,11 @@
+<div class="container">
+   <h2 class="margin-title"><strong>Galeria</strong></h2>
+   <div class="row center">
+      <div ng-repeat="(idx, foto) in vm.galeria">
+         <div ng-if="idx % 2 == 0" class="row"></div>
+         <div class="col m6 s12">
+            <img class="materialboxed responsive-img" ng-src="{{foto.img}}">
+         </div>
+      </div>
+   </div>
+</div>

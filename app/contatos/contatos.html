@@ -17,7 +17,8 @@
                 <label class="primary-color" for="mensagem" data-error="Digite uma mensagem" data-success="Ok!">Mensagem</label>
             </div>
         </div>
-        <button id="cadastrar" type="submit" class="btn btn-block btn-large right" ng-click="vm.sendEmail()">Enviar</button>
+        <a id="cadastrar" type="submit" class="btn btn-block btn-large right" 
+            href="mailto:ubuntu.social@gmail.com?subject=Ubuntu Site - {{ vm.nome }} - {{ vm.email }}&body={{ vm.mensagem }}">Enviar</a>
     </form>
     <br><br><br><br>
 </div>
@@ -42,7 +43,7 @@
                 </div>
             </div>
             <div class="col s12 m6 center">
-                <iframe width="628" height="300" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=Rua%20Dr%20Vila%20Nova%2044%20sala%2001%2001222020%20S%C3%A3o%20Paulo&key=AIzaSyCtzagFgyMwe0IYPPSVNaCbNxnlgQnyZTE"
+                <iframe width="300" height="300" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=Rua%20Dr%20Vila%20Nova%2044%20sala%2001%2001222020%20S%C3%A3o%20Paulo&key=AIzaSyCtzagFgyMwe0IYPPSVNaCbNxnlgQnyZTE"
                     allowfullscreen></iframe>
             </div>
         </div>

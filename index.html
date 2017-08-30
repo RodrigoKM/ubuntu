@@ -13,10 +13,8 @@
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-
-
-
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+    crossorigin="anonymous">
 </head>
 
 <body ng-app="app" ng-cloak="">
@@ -33,6 +31,7 @@
         <li><a class="dropdown-button" data-activates="dropdown1">Projetos</a></li>
         <li><a ui-sref="queroajudar">Quero Ajudar</a></li>
         <li><a ui-sref="contatos">Contato</a></li>
+        <li><a ui-sref="galeria">Galeria</a></li>        
       </ul>
 
       <ul id="nav-mobile" class="side-nav">
@@ -42,6 +41,7 @@
         <li><a ui-sref="amigosdavida">Amigos da Vida</a></li>
         <li><a ui-sref="queroajudar">Quero Ajudar</a></li>
         <li><a ui-sref="contatos">Contato</a></li>
+        <li><a ui-sref="galeria">Galeria</a></li>
       </ul>
       <a data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>
@@ -58,7 +58,9 @@
 
   <script>
     function upScreen() {
-      $("html, body").animate({ scrollTop: 0 }, 500);
+      $("html, body").animate({
+        scrollTop: 0
+      }, 500);
     }
   </script>
 
@@ -72,10 +74,12 @@
 
   <!-- Router -->
   <script src="app/routers/route.js"></script>
-
+  
   <!-- Services -->
-
+  <script src="app/services/galeria.service.js"></script>
+  
   <!-- Controllers -->
+  <script src="app/galeria/galeria.controller.js"></script>
 
   <!-- Components -->
   <script src="app/footer/footer.component.js"></script>
@@ -89,10 +93,15 @@
 
   <script>
     (function (i, s, o, g, r, a, m) {
-      i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
         (i[r].q = i[r].q || []).push(arguments)
-      }, i[r].l = 1 * new Date(); a = s.createElement(o),
-        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
     })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
     ga('create', 'UA-104316755-1', 'auto');
